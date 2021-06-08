@@ -1,13 +1,14 @@
 <template>
   <div>
-    <p>xxdd</p>
+
   </div>
 </template>
 
 <script>
+import { onMounted, reactive, ref } from 'vue';
 
 export default {
-  name: 'WeatherCard',
+  name: 'WeatherSearchBar',
   props: {
     weather: {
       type: Object,
@@ -15,9 +16,9 @@ export default {
     },
   },
   setup() {
- 
+
   },
 };
 </script>
 
-<style lang="scss" src="./WeatherCard.scss" />
+<style lang="scss" src="./WeatherSearchBar.scss" />

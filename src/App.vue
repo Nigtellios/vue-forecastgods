@@ -11,7 +11,7 @@ import WeatherBoard from '@/components/WeatherBoard/WeatherBoard.vue';
 export default {
   name: 'App',
   components: {
-    WeatherBoard,
+    WeatherBoard
   },
 };
 </script>

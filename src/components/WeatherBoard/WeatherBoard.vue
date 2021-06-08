@@ -1,6 +1,8 @@
 <template>
   <div>
-    weather
+    <weather-hero-section />
+    <weather-search-bar />
+    Pick Location:
     <input v-model="query" />
     <button @click="fetchWeather">Get weather</button>
 
@@ -12,10 +14,14 @@
 import { onMounted, reactive, ref } from 'vue';
 import axios from 'axios';
 import WeatherCard from '@/components/WeatherCard/WeatherCard.vue';
+import WeatherSearchBar from "@/components/WeatherSearchBar/WeatherSearchBar";
+import WeatherHeroSection from "@/components/WeatherHeroSection/WeatherHeroSection";
 
 export default {
   name: 'WeatherBoard',
   components: {
+    WeatherSearchBar,
+    WeatherHeroSection,
     WeatherCard,
   },
   setup() {
