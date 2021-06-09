@@ -1,0 +1,11 @@
+.hero {
+  margin: 50px;
+
+  .hero__button {
+    padding: 15px;
+    margin: 0 15px 0 0;
+    background: $light;
+    border: 2px solid $dark;
+    cursor: pointer;
+  }
+}
